@@ -1,0 +1,15 @@
+/* css/print.css */
+.no-print {
+  display: none !important;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  font-size: 12pt;
+}
+
+.kit-card {
+  border: none;
+  padding: 0;
+}

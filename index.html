@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Образовательный гид по комплектации аптечек</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+
+  <!-- Навигация -->
+  <header class="site-header no-print">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">Гид по аптечкам</a>
+      <nav class="nav">
+        <a href="#compare">Сравнение</a>
+        <a href="#kits">Комплектации</a>
+        <a href="#storage">Хранение</a>
+        <a href="#mistakes">Ошибки</a>
+        <a href="#sources">Источники</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Экран 1: Hero -->
+    <section id="hero" class="section hero no-print">
+      <div class="container">
+        <h1>Доказательный гид по комплектации аптечек</h1>
+        <p class="lead">Проверенные составы, назначение компонентов и правила хранения по стандартам Минздрава, Красного Креста, CDC и DIN.</p>
+        <div class="quick-links">
+          <a href="#kits" class="btn-quick" data-jump="home">Для дома</a>
+          <a href="#kits" class="btn-quick" data-jump="car">В автомобиль</a>
+          <a href="#kits" class="btn-quick" data-jump="travel">В путешествие</a>
+          <a href="#kits" class="btn-quick" data-jump="hiking">В поход</a>
+          <a href="#kits" class="btn-quick" data-jump="work">На работу</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Экран 2: Матрица различий -->
+    <section id="compare" class="section no-print">
+      <div class="container">
+        <h2>Чем отличаются комплекты?</h2>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Параметр</th>
+                <th>Дом</th>
+                <th>Авто</th>
+                <th>Путешествие</th>
+                <th>Поход</th>
+                <th>Работа</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Наличие лекарств</td>
+                <td>Да (МНН + рецепты)</td>
+                <td>Нет (запрещено)</td>
+                <td>Да (акцент на ЖКТ)</td>
+                <td>Да (в личной)</td>
+                <td>Нет (без медпункта)</td>
+              </tr>
+              <tr>
+                <td>Главные риски</td>
+                <td>Бытовые травмы, ОРВИ</td>
+                <td>Кровотечения при ДТП</td>
+                <td>Диарея, акклиматизация</td>
+                <td>Мозоли, грязь, холод</td>
+                <td>Порезы, производственные травмы</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Экран 3: Интерактивный конструктор / Табы (Ядро) -->
+    <section id="kits" class="section">
+      <div class="container">
+        <h2>Комплектация аптечек</h2>
+
+        <!-- Панель вкладок (заполняется через JS или статично) -->
+        <div class="tabs no-print" role="tablist" id="kit-tabs"></div>
+
+        <!-- Контейнер активной аптечки -->
+        <div id="kit-content" class="kit-card" role="tabpanel">
+          <!-- Сюда JS подставит заголовок, норматив, прогресс-бар и чеклист -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Экран 4: Назначение компонентов -->
+    <section id="purposes" class="section no-print">
+      <div class="container">
+        <h2>Зачем нужен каждый элемент?</h2>
+        <div class="cards-grid">
+          <article class="info-card">
+            <h3>Блокнот и маркер</h3>
+            <p>Критически важны для записи точного времени наложения жгута и передачи данных бригаде скорой помощи.</p>
+          </article>
+          <article class="info-card">
+            <h3>Изотермическое покрывало</h3>
+            <p>Удерживает тепло тела пострадавшего, замедляя развитие травматического шока и переохлаждения.</p>
+          </article>
+          <article class="info-card">
+            <h3>Физраствор и хлоргексидин</h3>
+            <p>Очищают открытые раны от грязи без химического ожога тканей (в отличие от спиртового йода или зелёнки).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Экран 5: Нормативная база -->
+    <section id="standards" class="section no-print">
+      <div class="container">
+        <h2>Нормативы и стандарты</h2>
+        <ul class="standards-list">
+          <li><strong>Приказ Минздрава РФ № 260н (2024–2030):</strong> комплектация автомобильной аптечки.</li>
+          <li><strong>Приказ Минздрава РФ № 262н и Минтруда № 398н:</strong> состав, размещение и учёт аптечек на рабочем месте.</li>
+          <li><strong>Приказ Минздрава РФ № 256н:</strong> обязательная аптечка для инструкторов-проводников в туризме.</li>
+          <li><strong>DIN 13164:2022 / DIN 13157:</strong> европейские стандарты для автомобиля и предприятий.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Экран 6: Хранение и сроки годности -->
+    <section id="storage" class="section no-print">
+      <div class="container">
+        <h2>Условия хранения и сроки годности</h2>
+        <div class="cards-grid">
+          <article class="info-card">
+            <h3>Комнатная температура (+15…+25 °C)</h3>
+            <p>Закрытый сухой шкаф в комнате или прихожей. Ванная и полка над плитой не подходят из-за влажности и жары.</p>
+          </article>
+          <article class="info-card">
+            <h3>Холодильник (+2…+8 °C)</h3>
+            <p>Для свечей, некоторых капель и пробиотиков. Не прислонять к задней стенке — замораживание портит препарат.</p>
+          </article>
+          <article class="info-card">
+            <h3>Срок после вскрытия</h3>
+            <p>Дата на коробке действует до открытия. Глазные капли часто годны 28 дней после вскрытия — пишите дату на флаконе маркером.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Экран 7: Частые ошибки (Аккордеон) -->
+    <section id="mistakes" class="section no-print">
+      <div class="container">
+        <h2>Частые ошибки</h2>
+        <details class="faq-item">
+          <summary>Вырезать таблетки из блистера без срока годности</summary>
+          <p>Нельзя пересыпать таблетки в контейнеры или обрезать край со сроком: легко перепутать дозировку и принять просроченный препарат.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Хранить лекарства в автомобиле круглый год</summary>
+          <p>Летом в салоне температура доходит до +60 °C, зимой опускается ниже -20 °C. Действующие вещества разрушаются.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <!-- Экран 8: Источники и дисклеймер -->
+  <footer id="sources" class="site-footer no-print">
+    <div class="container">
+      <h3>Источники информации</h3>
+      <ul>
+        <li><a href="http://publication.pravo.gov.ru/document/0001202405310066" target="_blank" rel="noopener">Приказ Минздрава РФ № 260н (автомобильная аптечка)</a></li>
+        <li><a href="http://publication.pravo.gov.ru/document/0001202405310074" target="_blank" rel="noopener">Приказ Минздрава РФ № 262н (аптечка для работников)</a></li>
+        <li><a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/anatomy-of-a-first-aid-kit.html" target="_blank" rel="noopener">American Red Cross — First Aid Kit</a></li>
+        <li><a href="https://www.cdc.gov/yellow-book/hcp/preparing-international-travelers/travel-health-kits.html" target="_blank" rel="noopener">CDC Yellow Book — Travel Health Kits</a></li>
+      </ul>
+      <p class="disclaimer">
+        Учебный информационный проект. Материалы носят образовательный характер и не заменяют консультацию врача или вызов экстренных служб (112 / 103).
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
