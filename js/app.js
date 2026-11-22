@@ -75,8 +75,10 @@ function renderKit(kitId) {
           <label class="checklist-label">
             <input type="checkbox" data-item-id="${item.id}" ${checkedItems[item.id] ? 'checked' : ''}>
             <div class="item-info">
-              <span class="item-name">${item.name} — <strong>${item.qty}</strong></span>
-              <span class="item-purpose">${item.purpose}</span>
+              <span class="item-name">
+                ${item.name} — <strong>${item.qty}</strong>
+                ${!item.required ? '<span class="tag-optional">По ситуации</span>' : ''}
+              </span>
             </div>
           </label>
         </li>
